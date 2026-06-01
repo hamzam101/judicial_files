@@ -31,6 +31,15 @@ app_include_js = [
     "/assets/judicial_files/js/judicial_common.js"
 ]
 
+# Home Pages
+# ----------
+
+role_home_page = {
+    "System User": "judicial-files",
+    "Administrator": "judicial-files",
+    "System Manager": "judicial-files",
+}
+
 # include js, css files in header of web template
 # web_include_css = "/assets/judicial_files/css/judicial_files.css"
 # web_include_js = "/assets/judicial_files/js/judicial_files.js"
