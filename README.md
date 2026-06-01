@@ -1,15 +1,23 @@
 ### Judicial Files
 
-Judicial Files
+Judicial Files app for ERPNext
 
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
+# 1. Navigate to your bench directory
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch HEAD
-bench install-app judicial_files
+
+# 2. Get the app from GitHub
+bench get-app https://github.com/hamzam101/Judicial-Files.git
+
+# 3. Install the app on your site (replace sitename with your site name)
+bench --site sitename install-app judicial_files
+
+# 4. (Optional) Run bench migrate to apply all changes
+bench --site sitename migrate
 ```
 
 ### Contributing
