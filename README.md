@@ -11,7 +11,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 cd $PATH_TO_YOUR_BENCH
 
 # 2. Get the app from GitHub
-bench get-app https://github.com/hamzam101/Judicial-Files.git
+bench get-app https://github.com/hamzam101/judicial_files.git
 
 # 3. Install the app on your site (replace sitename with your site name)
 bench --site sitename install-app judicial_files
