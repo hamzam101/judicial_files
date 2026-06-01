@@ -1,0 +1,14 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "Mail Status Distribution",
+ "chart_name": "توزيع حالات البريد",
+ "chart_type": "Group By",
+ "document_type": "Mail Data",
+ "group_by_type": "Count",
+ "based_on": "mail_status",
+ "number_of_groups": 0,
+ "is_public": 1,
+ "type": "Pie",
+ "module": "Judicial Files",
+ "filters_json": "[]"
+}

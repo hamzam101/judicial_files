@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-05-26 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "status",
+    "creation_date",
+    "posting_date",
+    "description",
+    "file_type",
+    "execution_items",
+    "dispute_items"
+   ],
+  "fields": [
+   {
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "in_list_view": 1,
+    "label": "عنوان المحفظة البريدية",
+    "reqd": 1,
+    "unique": 1
+   },
+   {
+    "default": "Draft",
+    "fieldname": "status",
+    "fieldtype": "Select",
+    "in_list_view": 1,
+    "in_standard_filter": 1,
+    "label": "الحالة",
+    "options": "Draft\nPosted",
+    "reqd": 1
+   },
+   {
+    "fieldname": "creation_date",
+    "fieldtype": "Date",
+    "in_list_view": 1,
+    "label": "تاريخ الإنشاء"
+   },
+   {
+    "fieldname": "posting_date",
+    "fieldtype": "Date",
+    "in_list_view": 1,
+    "label": "تاريخ الترحيل"
+   },
+   {
+    "fieldname": "description",
+    "fieldtype": "Small Text",
+    "label": "ملاحظات / وصف المحفظة"
+   },
+   {
+    "fieldname": "file_type",
+    "fieldtype": "Link",
+    "in_list_view": 1,
+    "in_standard_filter": 1,
+    "label": "نوع الملف",
+    "options": "Judicial File Type",
+    "reqd": 1
+   },
+   {
+     "depends_on": "eval:doc.file_type == 'تنفيذ'",
+     "fieldname": "execution_items",
+     "fieldtype": "Table",
+     "label": "بنود البريد (ملفات التنفيذ)",
+     "options": "Judicial Mail Batch Item"
+    },
+   {
+     "depends_on": "eval:doc.file_type == 'منازعات'",
+     "fieldname": "dispute_items",
+     "fieldtype": "Table",
+     "label": "بنود البريد (ملفات المنازعات)",
+     "options": "Judicial Mail Batch Dispute Item"
+    }
+   ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-05-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Mail Batch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

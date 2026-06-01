@@ -1,0 +1,16 @@
+{
+ "creation": "2026-06-01 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "modified": "2026-06-01 00:00:00.000000",
+ "module": "Judicial Files",
+ "name": "dispute-mail-editor",
+ "page_name": "dispute-mail-editor",
+ "roles": [
+  {
+   "role": "System User"
+  }
+ ],
+ "standard": "Yes",
+ "title": "Dispute Mail Editor"
+}

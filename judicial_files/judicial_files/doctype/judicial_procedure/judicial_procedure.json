@@ -1,0 +1,70 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-17 03:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "procedure_type",
+  "guarantee_type",
+  "column_break_2",
+  "submission_date",
+  "datea",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "procedure_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "نوع الإجراء",
+   "options": "Judicial Procedure Type",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.procedure_type===\"ضمان تجاري\"",
+   "fieldname": "guarantee_type",
+   "fieldtype": "Link",
+   "label": "نوع الضمانة",
+   "mandatory_depends_on": "eval:doc.procedure_type===\"ضمان تجاري\"",
+   "options": "Judicial Guarantee Type"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ التقديم",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "ملاحظات"
+  },
+  {
+   "fieldname": "visa_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ التأشير"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-17 12:23:16.404110",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Procedure",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

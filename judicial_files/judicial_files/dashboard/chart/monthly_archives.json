@@ -1,0 +1,17 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "Monthly Archives",
+ "chart_name": "الأرشفة الشهرية",
+ "chart_type": "Group By",
+ "document_type": "Execution File",
+ "group_by_type": "Count",
+ "based_on": "archive_date",
+ "number_of_groups": 0,
+ "is_public": 1,
+ "timespan": "Last Year",
+ "time_interval": "Monthly",
+ "timeseries": 1,
+ "type": "Line",
+ "module": "Judicial Files",
+ "filters_json": "[]"
+}

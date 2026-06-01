@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-25 20:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reference",
+  "dispute_file",
+  "file_number",
+  "year",
+  "petitioner",
+  "respondent",
+  "judge",
+  "secretary",
+  "current_secretary",
+  "original_status",
+  "new_status",
+  "posting_type",
+  "archive_date",
+  "archive_year_hijri",
+   "archive_month_hijri",
+   "execution_file_no",
+   "notes"
+  ],
+  "fields": [
+   {
+    "fieldname": "reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0631\u062c\u0639",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dispute_file",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0645\u0644\u0641 \u0627\u0644\u0645\u0646\u0627\u0632\u0639\u0627\u062a",
+   "options": "Dispute File"
+  },
+  {
+   "fieldname": "file_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0644\u0641"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0633\u0646\u0629"
+  },
+  {
+   "fieldname": "petitioner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u062f\u0639\u064a"
+  },
+  {
+   "fieldname": "respondent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u062f\u0639\u0649 \u0639\u0644\u064a\u0647"
+  },
+  {
+   "fieldname": "judge",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0642\u0627\u0636\u064a \u0627\u0644\u0645\u062e\u062a\u0635",
+   "options": "Judicial Employee"
+  },
+  {
+   "fieldname": "secretary",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0623\u0645\u064a\u0646 \u0627\u0644\u0633\u0631",
+   "options": "Judicial Employee"
+  },
+  {
+   "fieldname": "original_status",
+   "fieldtype": "Link",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u0623\u0635\u0644\u064a\u0629",
+   "options": "Judicial File Status"
+  },
+  {
+   "fieldname": "new_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u062c\u062f\u064a\u062f\u0629",
+   "options": "Judicial File Status"
+  },
+  {
+   "fieldname": "posting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0631\u062d\u064a\u0644",
+   "options": "Posting Type"
+  },
+  {
+   "fieldname": "archive_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0623\u0631\u0634\u064a\u0641 \u0645\u064a\u0644\u0627\u062f\u064a"
+  },
+  {
+   "fieldname": "archive_year_hijri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0633\u0646\u0629 \u0627\u0644\u0623\u0631\u0634\u0641\u0629 \u0647\u062c\u0631\u064a"
+  },
+  {
+   "fieldname": "archive_month_hijri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0634\u0647\u0631 \u0627\u0644\u0647\u062c\u0631\u064a \u0644\u0644\u0623\u0631\u0634\u0641\u0629"
+  },
+   {
+    "fieldname": "current_secretary",
+    "fieldtype": "Link",
+    "in_list_view": 1,
+    "label": "\u0623\u0645\u064a\u0646 \u0627\u0644\u0633\u0631 \u0627\u0644\u062d\u0627\u0644\u064a",
+    "options": "Judicial Employee"
+   },
+   {
+    "fieldname": "execution_file_no",
+    "fieldtype": "Link",
+    "in_list_view": 1,
+    "label": "\u0631\u0642\u0645 \u0645\u0644\u0641 \u0627\u0644\u062a\u0646\u0641\u064a\u0630",
+    "options": "Execution File"
+   },
+   {
+    "fieldname": "notes",
+    "fieldtype": "Small Text",
+    "in_list_view": 1,
+    "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+   }
+  ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-25 23:02:45.910485",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Archive Dispute Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

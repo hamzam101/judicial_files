@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-05-21 01:30:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "creation_date",
+  "posting_date",
+  "archive_date",
+  "archive_date_hijri",
+  "archive_year_hijri",
+  "judge_name",
+  "archive_month_hijri",
+  "logo_emblem",
+  "header_text_image",
+   "description",
+   "file_type",
+   "items",
+   "dispute_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "عنوان المحفظة",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "الحالة",
+   "options": "Draft\nPosted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ الإنشاء"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ الترحيل"
+  },
+  {
+   "fieldname": "archive_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ الأرشفة ميلادي"
+  },
+  {
+   "fieldname": "archive_date_hijri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "تاريخ الأرشفة هجري",
+   "read_only": 1
+  },
+  {
+   "fieldname": "archive_year_hijri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "سنة الأرشفة هجري",
+   "read_only": 1
+  },
+  {
+   "fieldname": "judge_name",
+   "fieldtype": "Link",
+   "label": "اسم القاضي",
+   "options": "Judicial Employee"
+  },
+  {
+   "fieldname": "archive_month_hijri",
+   "fieldtype": "Select",
+   "label": "الشهر الهجري",
+   "options": "محرم\nصفر\nربيع الأول\nربيع الآخر\nجمادى الأولى\nجمادى الآخرة\nرجب\nشعبان\nرمضان\nشوال\nذو القعدة\nذو الحجة"
+  },
+  {
+   "fieldname": "logo_emblem",
+   "fieldtype": "Attach Image",
+   "label": "شعار الجمهورية اليمنية (الصورة الأولى)"
+  },
+  {
+   "fieldname": "header_text_image",
+   "fieldtype": "Attach Image",
+   "label": "صورة ترويسة المحكمة (الصورة الثانية)"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات / وصف المحفظة"
+  },
+   {
+    "fieldname": "file_type",
+    "fieldtype": "Link",
+    "in_list_view": 1,
+    "in_standard_filter": 1,
+    "label": "نوع الملف",
+    "options": "Judicial File Type",
+    "reqd": 1
+   },
+   {
+    "depends_on": "eval:doc.file_type == 'تنفيذ'",
+    "fieldname": "items",
+    "fieldtype": "Table",
+    "label": "ملفات التنفيذ (الأرشيف)",
+    "options": "Judicial Archive Batch Item"
+   },
+   {
+    "depends_on": "eval:doc.file_type == 'منازعات'",
+    "fieldname": "dispute_items",
+    "fieldtype": "Table",
+    "label": "ملفات المنازعات (الأرشيف)",
+    "options": "Judicial Archive Dispute Item"
+   }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-05-25 20:10:00.000000",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Archive Batch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

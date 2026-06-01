@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reference",
+  "dispute_file",
+  "file_number",
+  "year",
+  "petitioner",
+  "respondent",
+  "judge",
+  "secretary",
+  "current_secretary",
+  "execution_file_no",
+  "original_status",
+  "new_status",
+  "posting_type",
+  "archive_date",
+  "archive_date_hijri",
+  "archive_year_hijri",
+  "archive_month_hijri",
+  "upload_mail",
+  "upload_mail_date",
+  "mail_returned",
+  "mail_returned_date",
+  "mail_status",
+  "mail_notes"
+ ],
+ "fields": [
+ {
+  "fieldname": "reference",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "المرجع",
+  "reqd": 1
+ },
+ {
+  "fieldname": "dispute_file",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "ملف المنازعات",
+  "options": "Dispute File"
+ },
+ {
+  "fieldname": "file_number",
+  "fieldtype": "Int",
+  "in_list_view": 1,
+  "label": "رقم الملف"
+ },
+ {
+  "fieldname": "year",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "السنة"
+ },
+ {
+  "fieldname": "petitioner",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "المدعي"
+ },
+ {
+  "fieldname": "respondent",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "المدعى عليه"
+ },
+ {
+  "fieldname": "judge",
+  "fieldtype": "Link",
+  "label": "القاضي المختص",
+  "options": "Judicial Employee"
+ },
+ {
+  "fieldname": "secretary",
+  "fieldtype": "Link",
+  "label": "أمين السر",
+  "options": "Judicial Employee"
+ },
+ {
+  "fieldname": "current_secretary",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "أمين السر الحالي",
+  "options": "Judicial Employee"
+ },
+ {
+  "fieldname": "execution_file_no",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "رقم ملف التنفيذ",
+  "options": "Execution File"
+ },
+ {
+  "fieldname": "original_status",
+  "fieldtype": "Link",
+  "label": "حالة الملف",
+  "options": "Judicial File Status"
+ },
+ {
+  "fieldname": "new_status",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "حالة الملف الجديدة",
+  "options": "Judicial File Status"
+ },
+ {
+  "fieldname": "posting_type",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "نوع الترحيل",
+  "options": "Posting Type"
+ },
+ {
+  "fieldname": "archive_date",
+  "fieldtype": "Date",
+  "in_list_view": 1,
+  "label": "تاريخ الأرشيف ميلادي"
+ },
+ {
+  "fieldname": "archive_date_hijri",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "تاريخ الأرشفة هجري"
+ },
+ {
+  "fieldname": "archive_year_hijri",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "سنة الأرشفة هجري"
+ },
+ {
+  "fieldname": "archive_month_hijri",
+  "fieldtype": "Data",
+  "in_list_view": 1,
+  "label": "شهر الأرشفة هجري"
+ },
+ {
+  "default": "0",
+  "fieldname": "upload_mail",
+ "fieldtype": "Check",
+ "in_list_view": 1,
+ "label": "رفع البريد"
+ },
+ {
+  "fieldname": "upload_mail_date",
+  "fieldtype": "Date",
+  "in_list_view": 1,
+  "label": "تاريخ رفع البريد"
+ },
+ {
+  "default": "0",
+  "fieldname": "mail_returned",
+  "fieldtype": "Check",
+  "in_list_view": 1,
+  "label": "رد البريد"
+ },
+ {
+  "fieldname": "mail_returned_date",
+  "fieldtype": "Date",
+  "in_list_view": 1,
+  "label": "تاريخ رد البريد"
+ },
+ {
+  "default": "معلق",
+  "fieldname": "mail_status",
+  "fieldtype": "Link",
+  "in_list_view": 1,
+  "label": "حالة البريد",
+  "options": "Judicial Mail Status"
+ },
+ {
+  "fieldname": "mail_notes",
+  "fieldtype": "Small Text",
+  "in_list_view": 1,
+  "label": "الملاحظات"
+ }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Mail Batch Dispute Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

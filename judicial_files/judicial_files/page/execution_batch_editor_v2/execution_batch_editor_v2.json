@@ -1,0 +1,16 @@
+{
+ "creation": "2026-05-18 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "modified": "2026-05-18 00:00:00.000000",
+ "module": "Judicial Files",
+ "name": "execution-batch-editor-v2",
+ "page_name": "execution-batch-editor-v2",
+ "roles": [
+  {
+   "role": "System User"
+  }
+ ],
+ "standard": "Yes",
+ "title": "Execution Batch Editor V2"
+}

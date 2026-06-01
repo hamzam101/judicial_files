@@ -1,0 +1,16 @@
+{
+ "creation": "2026-05-26 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "modified": "2026-05-26 00:00:00.000000",
+ "module": "Judicial Files",
+ "name": "execution-mail-editor",
+ "page_name": "execution-mail-editor",
+ "roles": [
+  {
+   "role": "System User"
+  }
+ ],
+ "standard": "Yes",
+ "title": "Execution Mail Editor"
+}

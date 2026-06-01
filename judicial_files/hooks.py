@@ -26,7 +26,10 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/judicial_files/css/judicial_files.css"
-# app_include_js = "/assets/judicial_files/js/judicial_files.js"
+app_include_js = [
+    "/assets/judicial_files/js/hijri_utils.js",
+    "/assets/judicial_files/js/judicial_common.js"
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/judicial_files/css/judicial_files.css"
@@ -109,6 +112,16 @@ app_license = "mit"
 
 # before_app_uninstall = "judicial_files.utils.before_app_uninstall"
 # after_app_uninstall = "judicial_files.utils.after_app_uninstall"
+
+# Fixtures
+# ------------------
+
+fixtures = [
+    {"dt": "Workspace", "filters": [["module", "=", "Judicial Files"]]},
+    {"dt": "Dashboard", "filters": [["module", "=", "Judicial Files"]]},
+    {"dt": "Dashboard Chart", "filters": [["module", "=", "Judicial Files"]]},
+    {"dt": "Number Card", "filters": [["module", "=", "Judicial Files"]]},
+]
 
 # Build
 # ------------------

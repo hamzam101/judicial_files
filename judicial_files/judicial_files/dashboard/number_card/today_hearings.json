@@ -1,0 +1,13 @@
+{
+ "doctype": "Number Card",
+ "name": "Today Hearings",
+ "label": "جلسات اليوم",
+ "document_type": "Judicial Hearing",
+ "function": "Count",
+ "show_percentage_stats": 0,
+ "show_percentage": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type",
+ "filters_json": "[[\"Judicial Hearing\",\"hearing_date\",\"Timespan\",\"today\"]]",
+ "module": "Judicial Files"
+}

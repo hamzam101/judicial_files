@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-17 01:45:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "referral_type",
+  "referral_date",
+  "column_break_2",
+  "judge",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "referral_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "نوع الإحالة",
+   "options": "Judicial Referral Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "referral_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "تاريخ الإحالة",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "judge",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "القاضي",
+   "options": "Judicial Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-17 01:45:00.000000",
+ "modified_by": "Administrator",
+ "module": "Judicial Files",
+ "name": "Judicial Referral",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

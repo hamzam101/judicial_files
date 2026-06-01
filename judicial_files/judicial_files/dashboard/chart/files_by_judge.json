@@ -1,0 +1,14 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "Files by Judge",
+ "chart_name": "الملفات حسب القاضي",
+ "chart_type": "Group By",
+ "document_type": "Execution File",
+ "group_by_type": "Count",
+ "based_on": "judge",
+ "number_of_groups": 10,
+ "is_public": 1,
+ "type": "Bar",
+ "module": "Judicial Files",
+ "filters_json": "[]"
+}
