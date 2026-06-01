@@ -1,11 +1,10 @@
 {
  "doctype": "Workspace",
- "name": "القضاء",
+ "name": "judicial-files",
  "module": "Judicial Files",
  "label": "القضاء",
  "category": "Modules",
  "is_standard": 1,
- "route": "judicial-files",
  "charts": [
   {"chart": "Files by Status"},
   {"chart": "Monthly New Files"},
