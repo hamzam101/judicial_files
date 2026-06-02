@@ -1,0 +1,28 @@
+[
+ {
+  "doctype": "Dashboard",
+  "name": "Judicial Files Dashboard",
+  "dashboard_name": "لوحة القضاء",
+  "module": "Judicial Files",
+  "is_standard": 1,
+  "charts": [
+   {"chart": "Files by Status"},
+   {"chart": "Files by Judge"},
+   {"chart": "Monthly New Files"},
+   {"chart": "Monthly Archives"},
+   {"chart": "Mail Status Distribution"},
+   {"chart": "Workload by Type"},
+   {"chart": "Batch Activity"}
+  ],
+  "number_cards": [
+   {"card": "Total Execution Files"},
+   {"card": "Total Dispute Files"},
+   {"card": "Pending Execution Files"},
+   {"card": "Pending Dispute Files"},
+   {"card": "Total Employees"},
+   {"card": "Active Mail Batches"},
+   {"card": "Active Archive Batches"},
+   {"card": "Today Hearings"}
+  ]
+ }
+]
